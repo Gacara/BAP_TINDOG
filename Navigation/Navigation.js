@@ -6,9 +6,11 @@ import { createStackNavigator, createAppContainer, createBottomTabNavigator  } f
 import Search from '../Components/Search'
 import ChienDetail from '../Components/ChienDetail'
 import Favorites from '../Components/Favorites'
+import Forms from '../Components/Forms'
+import SeConnecter from '../Components/SeConnecter'
 import ChienList from '../Components/ChienList'
 import Chat from '../Components/Chat'
-
+import Profil from '../Components/Profil'
 
 const SearchStackNavigator = createStackNavigator({
  
@@ -30,8 +32,20 @@ Chat: {
 
 const ChiensTabNavigator = createBottomTabNavigator({
 
+User: {
+    screen: Forms,
+    navigationOptions: {
+      
+        tabBarIcon: () => { 
+          return <Image
+            source={require('../img/user.png')}
+            style={styles.icon}/> 
+        }
+      }
+  },
+
   Settings: {
-    screen: Favorites,
+    screen: Profil,
      navigationOptions: {
 
         tabBarIcon: () => { 
@@ -43,17 +57,7 @@ const ChiensTabNavigator = createBottomTabNavigator({
   },
 
 
-User: {
-    screen: Favorites,
-    navigationOptions: {
-     	
-        tabBarIcon: () => { 
-          return <Image
-            source={require('../img/user.png')}
-            style={styles.icon}/> 
-        }
-      }
-  },
+
 
   Search: {
     screen: SearchStackNavigator,

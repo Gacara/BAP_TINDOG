@@ -79,7 +79,8 @@ _displayFavoriteImage() {
     {this._displayFavoriteImage()}
 </TouchableOpacity>
 
-		<Text>{txtChien}</Text>
+		<Text style={{marginBottom:10,fontWeight:'500'}}>Description :</Text>
+    <Text>{txtChien}</Text>
 		</View>
 
 		

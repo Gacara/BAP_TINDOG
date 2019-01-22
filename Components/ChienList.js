@@ -30,7 +30,6 @@ class ChienList extends React.Component {
   }
 
 
-
   _displayDetailChien = (Chien) => {
     console.log(this.props.favoritesChien)
     this.props.navigation.navigate("Chat", { Chien: Chien})
