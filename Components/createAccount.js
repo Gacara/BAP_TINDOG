@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {StyleSheet, Text, View, Image, Button, TextInput, Alert, TouchableOpacity, ScrollView} from 'react-native'
 
 
@@ -31,7 +31,7 @@ export default class CreateAccount extends React.Component {
                 <ScrollView>
 
                 <Image style={styles.logo}
-                    source={require('../img/logo.png')}
+                    source={require('../img/dernierlogo2.png')}
                 />
 
                 <Text style={styles.title}>
@@ -50,7 +50,7 @@ export default class CreateAccount extends React.Component {
                     <View style={styles.dog_pictures}></View>
                     <View style={styles.dog_pictures}>
                         <Image style={styles.add}
-                               source={require('../img/1.jpg')}
+                               source={require('../img/add_big.png')}
                         />
                     </View>
                 </View>
@@ -151,7 +151,7 @@ export default class CreateAccount extends React.Component {
 
                     <View style={styles.Objectifs}>
                         <Text style={styles.Objectif_title}>Objectif(s) : </Text>
-                        <View style={{flexDirection: 'row', marginTop: 5,}}>
+                        <View style={{flexDirection: 'row', justifyContent: 'spaceBetween', marginTop: 5,}}>
                             <TouchableOpacity onPress={this._onChangeColor}>
                                 <View style = {{alignItems: 'center',
                                     justifyContent: 'center', borderRadius: 15, width: 170, height: 30, borderWidth: 1, borderColor: 'orange', marginRight: 10,}}>
